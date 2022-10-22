@@ -1,3 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*******************************************/
+/* HEADER */
+/*******************************************/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(
+    to right bottom,
+    rgb(76, 58, 81),
+    rgb(38, 38, 38)
+  );
+  position: relative;
+
+  height: 5rem;
+  padding: 0 4rem;
+}
+
+.logo {
+  height: 7.5rem;
+  transform: translateY(0.9rem);
+}
+
+/*******************************************/
+/* MAIN */
+/*******************************************/
+
 .parentbox {
   display: flex;
   justify-self: center;
@@ -127,4 +161,73 @@
   .icon {
     transform: translateX(15%) scale(1.5);
   }
+}
+
+.section-description {
+  margin-top: 6rem;
+  padding: 4rem 8.5rem;
+  background-image: linear-gradient(
+    to right bottom,
+    rgb(76, 58, 81),
+    rgb(38, 38, 38)
+  );
+  text-align: center;
+}
+
+.heading-desc {
+  text-align: center;
+}
+
+.heading-desc h2 {
+  font-family: "Roboto", sans-serif;
+  color: #ffdede;
+  margin-bottom: 2rem;
+}
+
+.remaining {
+  color: #fefbf3;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+/*FOOTER*/
+.footer {
+  padding: 4rem 10rem;
+  padding-top: 8rem;
+  background-image: linear-gradient(
+    to left bottom,
+    rgb(38, 38, 38),
+    rgb(76, 58, 81)
+  );
+  border-top: 1px solid #777;
+}
+
+.footer-row {
+  display: flex;
+  gap: 7rem;
+  color: #ffdede;
+  font-family: "Roboto", sans-serif;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-family: "Work Sans", sans-serif;
+  flex-grow: 1;
+  width: 10rem;
+}
+
+.footer-row h3 {
+  font-weight: 500 !important;
+}
+
+.details {
+  color: #fefbf3;
+  font-family: "Work Sans", sans-serif;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  /* width: 12rem; */
+  line-height: 1.4;
 }
