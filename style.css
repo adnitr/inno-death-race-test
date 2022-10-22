@@ -1,0 +1,130 @@
+.parentbox {
+  display: flex;
+  justify-self: center;
+  justify-content: center;
+  margin-top: 6rem;
+  font-family: "Roboto", sans-serif;
+  gap: 5rem;
+}
+.event-poster {
+  align-self: center;
+}
+.parentbox img {
+  height: 26rem;
+  border-radius: 10px;
+}
+.box {
+  width: 45%; /*This line should be commented if this code is used for streamlit*/
+  align-self: center;
+}
+.mycontainer {
+  color: #ffdede;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.mybox {
+  position: relative;
+  height: 10rem;
+  background-color: #4c3a51;
+  padding: 1rem 1rem 0 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.mybox h3 {
+  margin: 0;
+  font-weight: 550 !important;
+}
+
+.content {
+  position: relative;
+  color: #e7ab79;
+  margin-top: auto;
+  text-align: end;
+  display: inline-block;
+}
+
+.icon {
+  transform: scale(1.5);
+  opacity: 0.2;
+}
+
+.info {
+  color: #fefbf3;
+  font-weight: 600;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60%;
+  text-align: left;
+}
+
+.info p {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 1080px) {
+  .box {
+    width: 40%;
+  }
+  .parentbox {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1050px) {
+  .mycontainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .icon {
+    transform: translateX(-10%) scale(1.5);
+  }
+}
+
+@media (max-width: 750px) {
+  .box {
+    width: 70%;
+  }
+}
+
+@media (max-width: 450px) {
+  .box {
+    width: 85%;
+  }
+}
+
+@media (max-width: 350px) {
+  .box {
+    width: 95%;
+  }
+  .icon {
+    transform: translateX(-5%) scale(1.5);
+  }
+}
+
+@media (max-width: 300px) {
+  .parentbox img {
+    width: 95%;
+  }
+  .box {
+    width: 100%;
+  }
+  .icon {
+    transform: translateX(0%) scale(1.5);
+  }
+}
+
+@media (max-width: 250px) {
+  .icon {
+    transform: translateX(15%) scale(1.5);
+  }
+}
