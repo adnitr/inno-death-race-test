@@ -10,7 +10,7 @@
 
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   background-image: linear-gradient(
     to right bottom,
@@ -18,7 +18,6 @@
     rgb(38, 38, 38)
   );
   position: relative;
-
   height: 5rem;
   padding: 0 4rem;
 }
@@ -45,7 +44,9 @@
 }
 .parentbox img {
   height: 26rem;
+  padding: 0 0.1rem;
   border-radius: 10px;
+  width: 100%;
 }
 .box {
   width: 45%; /*This line should be commented if this code is used for streamlit*/
@@ -68,6 +69,7 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  text-align: center;
 }
 
 .mybox h3 {
@@ -190,10 +192,15 @@
   font-size: 1.1rem;
   line-height: 1.4;
 }
+.remaining a{
+  text-decoration: none;
+  color: gold;
+  font-size: 1.5rem;
+}
 /*FOOTER*/
 .footer {
   padding: 4rem 10rem;
-  padding-top: 8rem;
+  padding-top: 4rem;
   background-image: linear-gradient(
     to left bottom,
     rgb(38, 38, 38),
@@ -204,7 +211,7 @@
 
 .footer-row {
   display: flex;
-  gap: 7rem;
+  gap: 4rem;
   color: #ffdede;
   font-family: "Roboto", sans-serif;
   margin-bottom: 3rem;
@@ -233,6 +240,13 @@
   /* width: 12rem; */
   line-height: 1.4;
 }
+.details .socials{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  width: auto;
+}
 
 hr {
   border: none;
@@ -245,4 +259,51 @@ hr {
   font-size: 0.85rem;
   font-family: "Work Sans", sans-serif;
   color: #999;
+}
+
+@media (max-width: 1115px) {
+  .footer{
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+@media (max-width: 900px) {
+  .footer{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .footer-row{
+    gap: 3rem;
+  }
+}
+@media (max-width: 750px) {
+  .footer-row{
+    display: block;
+  }
+  .footer{
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+  .col{
+    text-align: center;
+    margin-bottom: 2rem;
+    width: auto;
+  }
+  .details{
+    gap: 2rem;
+    margin-top: -1rem;
+    width: auto;
+  }
+}
+@media (max-width: 650px){
+  .footer{
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .details{
+    gap: 1rem;
+  }
+  .section-description {
+    padding: 4rem 2rem;
+  }
 }
